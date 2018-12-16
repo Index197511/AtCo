@@ -1,0 +1,32 @@
+De,Di=map(int,input().split())
+Dir='N NNE NE ENE E ESE SE SSE S SSW SW WSW W WNW NW NNW'.split()
+ans1=Dir[int((De*10+1125)//2250%16)]
+Di=round(Di/60+0.01,1)
+if Di<=0.2:
+    ans2=0
+    ans1='C'
+elif Di<=1.5:
+    ans2=1
+elif Di<=3.3:
+    ans2=2
+elif Di<=5.4:
+    ans2=3
+elif Di<=7.9:
+    ans2=4
+elif Di<=10.7:
+    ans2=5
+elif Di<=13.8:
+    ans2=6
+elif Di<=17.1:
+    ans2=7
+elif Di<=20.7:
+    ans2=8
+elif Di<=24.4:
+    ans2=9
+elif Di<=28.4:
+    ans2=10
+elif Di<=32.6:
+    ans2=11
+else:
+    ans2=12
+print('{} {}'.format(ans1,ans2))
