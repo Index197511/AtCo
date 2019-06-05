@@ -1,0 +1,5 @@
+n=int(input())
+s=list(set(list(map(int,input().split()))))
+q=int(input())
+t=list(set(list(map(int,input().split()))))
+print(len(s)+len(t)-len(set(s+t)))

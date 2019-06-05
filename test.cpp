@@ -1,27 +1,17 @@
-#include<iostream>
-#include<algorithm>
+#include <iostream>
+#include <vector>
 using namespace std;
 int main(){
-    int n,m;
-    cin>>n>>m;
-    int a,ans=1;
-    a=m/n;
-    if (m%n==0) {
-      cout<<m/n<<endl;
-      return 0;
+    int x;
+    vector <int> a;
+    for (int i = 0; i < 10; i++) {
+        cin >> x;
+        a.push_back(x);
     }
-    for (size_t i = 1; i < a+1; i++) {
-      if (m%i==0) {
-        if (ans<i) {
-          ans=i;
-        }
-      }
+    for (int i = 0; i < 10; i++) {
+        cout << a[i] << " ";
     }
-    cout<<ans<<endl;
-
-
-
-
-
-
+    cout << endl;
 }
+// 入力 1 2 3 4 5 6 7 8 9 10
+// 出力 2 4 6 8 10 12 14 16 18 20
